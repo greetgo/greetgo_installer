@@ -41,7 +41,7 @@ public class InstallerTask {
     ;
     
     addRepo("https://github.com/greetgo/depinject.git", "depinject/greetgo.depinject.parent")
-      .commit("59b6bdd - version 1.1.2")
+      .commit("722bb47 - version 1.1.3")
     ;
   }
 
