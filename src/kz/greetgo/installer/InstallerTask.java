@@ -39,6 +39,10 @@ public class InstallerTask {
     addRepo("https://github.com/greetgo/greetgo.java_compiler.git", "greetgo.java_compiler")
       .commit("b7462cd - version 0.0.3")
     ;
+    
+    addRepo("https://github.com/greetgo/depinject.git", "depinject/greetgo.depinject.parent")
+      .commit("59b6bdd - version 1.1.2")
+    ;
   }
 
   final List<Repo> repoList = new ArrayList<>();
