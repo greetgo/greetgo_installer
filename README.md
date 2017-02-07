@@ -11,4 +11,4 @@ After that you need run the following commands
 
     gradle all
 
-And then, if all buildings is successful, all greetgo libraries will be installed into local maven repository.
+And then, all greetgo libraries will be installed into local maven repository.
