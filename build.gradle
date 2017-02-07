@@ -1,4 +1,3 @@
-
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
@@ -20,3 +19,17 @@ sourceSets {
   }
 }
 
+
+task all(type: JavaExec) {
+  dependsOn jar
+
+  main = 'kz.greetgo.installer.InstallerTask'
+  args = []
+
+  classpath {
+    [
+        sourceSets.main.runtimeClasspath,
+        //sourceSets.test.runtimeClasspath,
+    ]
+  }
+}
