@@ -1,0 +1,22 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+apply plugin: 'idea'
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+}
+
+sourceSets {
+  main {
+    java.srcDirs = ["src", "src_resources"]
+    resources.srcDirs = ["src", "src_resources"]
+  }
+  test {
+    java.srcDirs = ["test_src", "test_src_resources"]
+    resources.srcDirs = ["test_src", "test_src_resources"]
+  }
+}
+
